@@ -3,11 +3,114 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
  <!--  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 </head>
 
 <style>
+/* General CSS Setup */
+body{
+  background-color: #19DDD9 ;
+  font-family: "Ubuntu-Italic", "Lucida Sans", helvetica, sans;
+}
+
+/* container */
+.container {
+  padding: 5% 5%;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+    margin: 40px;
+  display: inline-block;
+  position: relative;
+    width: 300px;
+    height: auto;
+    background-color: #19DDD9 ;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+
+}
+
+
+.tri-right.btm-right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: 38px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: #19DDD9  #19DDD9 transparent transparent;
+}
+
+.tri-right.border.right-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: -40px;
+  top: 30px;
+    bottom: auto;
+    border: 20px solid;
+    border-color: #19DDD9  transparent transparent #19DDD9 ;
+}
+.tri-right.right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  left: auto;
+    right: -20px;
+  top: 38px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: #19DDD9  transparent transparent #19DDD9 ;
+}
+
+
+.talktext{
+  padding: 1em;
+    text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+  
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 270px;
+     /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .label {
     color: white;
     padding: 8px;
@@ -22,18 +125,18 @@
 .footer {
     width: 100%;
     height: 2%;
-    background-color: #7FB3D5  ;
+    background-color: #19DDD9  ;
     /* color: white;
     text-align: center; */
   }
 header {
     background-color: #7FB3D5 ;
-    padding: 5px;
+    padding: 0px;
     text-align: left;
     font-size: 15px;
-    color: black;
+    color: white;
     
-
+    
     
 }
 .wrap {
@@ -55,6 +158,7 @@ float: right;
     padding-left: 10px;
     width: 50%;
 }
+
 body {
   background: rgb(204,204,204);
 }
@@ -72,6 +176,7 @@ page[size="A4"] {
 .container{
     width: 21cm;
 }
+
 </style>
 <body>
 
@@ -80,33 +185,64 @@ page[size="A4"] {
     width: 794px;
     height: 270px;
 ">
-  <h2 class="fn"><b><span class="glyphicon glyphicon-user"></span>G S S R RAM</b></h2>
-  <div align="right">
-<tr> 
 
- 
-    
-    <td><b><span class="glyphicon glyphicon-map-marker"></span> vizag</b></td><br>
-    <td><b><span class="glyphicon glyphicon-envelope"></span> raghuramgss@gmail.com</b></td><br>
-    <td><b><span class="glyphicon glyphicon-earphone"></span> (+91)9492930939</b></td><br>
-  </tr>
-
- 
-    
-    </div>
-<div align="center" ></div>
-<tr> 
-
-
-	<div class="container">
-<center>
-  <img src="ram.jpg"  class="img-circle" width="150" height="136">
+  
+<div>
+<div class="row">
+  <div class="column" style="background-color:#19DDD9  ;">
+    <h2 class="fn"><b> RAGHU RAM</b></h2>
+   <h2 class="fn"><b>GOVINDARAJU</b></h2>
+   <h4 class="fn"><b> PROJECT ASSOCIATE AT NEXZIP</b></h4>
+  </div>
+  <div align="center" class="column" style="background-color:#19DDD9  ;">
+    <center>
+  <img src="ram1.jpg" class="img-circle" width="150" height="136" style="
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-top-width: 20px;
+    border-bottom-width: 30px;
+">
   </center>
 
+   
+ 
+  </div>
+  <div class="column" style="background-color:#19DDD9  ;">
+     <tr> 
 
+  <div align="left">
+ 
+
+    <td><b> <span class="glyphicon glyphicon-map-marker"></span> vizag &nbsp &nbsp </b></td><br>
+
+    <td><b><span class="glyphicon glyphicon-envelope"></span> raghuramgss@gmail.com</b></td><br>
+    <td><b><span class="glyphicon glyphicon-earphone"></span> (+91)9492930939</b></td><br>
+
+  </tr>
+  </div>
+</div>
+
+<!--
+  <div align="center" ></div>
+<tr> 
+
+
+    <div class="container">
+<center>
+    <td>
+  
+  
+  </td></center>
+
+   
 </div>
 
 </tr>
+</div>
+  -->
+    
+    
+
        
 
 </header>
@@ -119,6 +255,7 @@ page[size="A4"] {
         height:12%;
         width: 75%
     ">
+
     <p style="text-align: justify;">To obtain a responsible, challenging, and awarding position in a software development organization with an established record of accomplishment where my skills, abilities and technical knowhow can be utilized.</p>
              </div>
              </div>
@@ -129,10 +266,31 @@ page[size="A4"] {
             
             <dt><h3><center><span class="label success">EDUCATION</span></center></h3></dt>
             <div style="width:100%; color: rgb(0, 0, 0)" >
+                <table>
+                    <tr>
+
+                <div class="talk-bubble tri-right round right-in">
+  <div class="talktext">
+    <p style="text-align: justify;padding-right: 3px"><span class="glyphicon glyphicon-education"></span> B.Tech.(Computer Science and Engineering) &ndash; From Pragati Engineering College under JNTU (K) with aggregate of 67.00%.</p>
+    
+  </div>
+</div>
+<div class="talk-bubble tri-right round right-in">
+  <div class="talktext">
+    <p style="text-align: justify;padding-right: 3px"><span class="glyphicon glyphicon-education"></span> Intermediate: Board of Intermediate Education, AP, Narayana Junior College, Hyderabad with 86.7% aggregate in the year Apr.2014.</p>
+  </div>
+</div>
+<div class="talk-bubble tri-right round right-in">
+  <div class="talktext">
+   <p style="text-align: justify;padding-right: 3px"><span class="glyphicon glyphicon-education"></span> 10 th :SSC Board &ndash; Sri Chaitanya Techno School, Mandapet, EG Dist., Andhra Pradesh, with CGPA of 9.0 in Apr.2012.</p>
+  </div>
+</div>
+                </tr>
+            </table>
                 
-                <p style="text-align: justify;padding-right: 3px"><span class="glyphicon glyphicon-education"></span> B.Tech.(Computer Science and Engineering) &ndash; From Pragati Engineering College under JNTU (K) with aggregate of 67.00%.</p>
-                <p style="text-align: justify;padding-right: 3px"><span class="glyphicon glyphicon-education"></span> Intermediate: Board of Intermediate Education, AP, Narayana Junior College, Hyderabad with 86.7% aggregate in the year Apr.2014.</p>
-                <p style="text-align: justify;padding-right: 3px"><span class="glyphicon glyphicon-education"></span> 10 th :SSC Board &ndash; Sri Chaitanya Techno School, Mandapet, EG Dist., Andhra Pradesh, with CGPA of 9.0 in Apr.2012.</p>
+                
+                
+                
             </div>
             <dt><h3><center><span class="label success">PERSONAL QUALITIES</span></center></h3></dt>
             <div style="width:100%;  color: rgb(0, 0, 0)">
@@ -237,6 +395,7 @@ page[size="A4"] {
 
 
 
+
                              </td>
                          </tr>
 
@@ -248,7 +407,24 @@ page[size="A4"] {
 
 
 
+
                  </dd>
+                 <dt><h3><center><span class="label success">PERSONAL SKILLS</span></center></h3></dt>
+                 <div>
+                    <img src="skills.jpg" width="500" height="333" style="
+    width: 350px;
+    height: 235px;
+    padding-top: auto;
+">
+                     
+                 </div>
+
+
+<!-- <img src="skills.jpg" width="500" height="333" style="
+    width: 380px;
+    height: 250px;
+    padding-top: auto;
+"> -->
 
 
 
@@ -257,6 +433,14 @@ page[size="A4"] {
 
 
     </div>
+
+
+
+
+
+
+
+        </div>
 </div>
 <div class="footer">
  
